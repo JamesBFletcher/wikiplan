@@ -7,7 +7,7 @@
 html,
 body {
   width: 100%;
-  height : 100%;
+  height: 100%;
 }
 
 .hero {
@@ -19,86 +19,158 @@ body {
 }
 
 .hero::before {
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f6/Campus_-_The_Danish_Design_School.jpg');
-            background-size: cover;
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -2;
-            /* opacity: 0; */
-        }
-        .hero::after {
-            background-color: #43acff;
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            opacity: 0;
-        }
-        .flex-center {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-        }
-        .not-hero {
-            width: 100vw;
-            height: 30%;
-        }
-        .bg-info {
-            background-color: #FFFFFF;
-            color: #fff;
-        }
-        .not-hero-message {
-            color: #fff;
-            text-shadow: #343a40 2px 2px;
-            min-width: 50%;
-            min-height: 7em;
-        }
-        .hero-message {
-            color: #fff;
-            text-shadow: #000000 2px 2px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f6/Campus_-_The_Danish_Design_School.jpg');
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  /* opacity: 0; */
+}
 
-            min-width: 100%;
-            min-height: 12em;
-            position: relative;
+.hero::after {
+  background-color: #43acff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+}
 
-        }
-        .hero-message::before {
-            content: "";
-            display: block;
-            position: absolute;
-            margin-left: 0;
-            min-width: 100%;
-            min-height: 16em;
-            z-index: -1;
-            opacity: 0.3;
-            background-color: #343a40;
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 
-        }
-        .hero-title,
-        .hero-sub-title {
-            width: 100%;
-            display: block;
-            text-align: center;
-            font-family: serif;
-        }
-        .hero-title {
-            margin: 3% 0;
-            /* text-transform: uppercase; */
-            font-size: 8em;
-        }
+.not-hero {
+  width: 100vw;
+  height: 30%;
+}
 
-        .txtbtn {
-          position: absolute;
+.bg-info {
+  background-color: #FFFFFF;
+  color: #fff;
+}
+
+.not-hero-message {
+  color: #fff;
+  text-shadow: #343a40 2px 2px;
+  min-width: 50%;
+  min-height: 7em;
+}
+
+.hero-message {
+  color: #fff;
+  text-shadow: #000000 2px 2px;
+  min-width: 100%;
+  min-height: 14em;
+  position: relative;
+}
+
+.hero-message::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: 0;
+  min-width: 100%;
+  min-height: 16em;
+  z-index: -1;
+  opacity: 0.3;
+  background-color: #343a40;
+}
+
+.hero-title,
+.hero-sub-title {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-family: serif;
+}
+
+.hero-title {
+  margin: 3% 0;
+  /* text-transform: uppercase; */
+  font-size: 8em;
+}
+
+/* .txtbtn {
+          position: relative;
           align-self: center;
-          width: 50%;
-        }
+          width: 30%;
+          height: 50%;
+        } */
+.bot-container {
+  height: 30%;
+  width: 100%;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  display: inline-block;
+}
+
+.sheetsframe {
+  width: 100%;
+  height: 100%;
+}
+
+.back-container {
+  margin-right: .2em;
+  margin-top: .2em;
+  margin-bottom: .2em;
+}
+
+/* Nice button code by Vincent Durand */
+button {
+  background: #43acff;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  margin-left: .3em;
+  margin-right: .3em;
+  width: 10em;
+}
+
+button:hover {
+  background: #fff;
+  width: 10em;
+  color: #43acff;
+}
+
+button:before, button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #43acff;
+  transition: 400ms ease all;
+}
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button:hover:before, button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
