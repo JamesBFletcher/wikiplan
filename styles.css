@@ -144,6 +144,7 @@ button {
   margin-left: .3em;
   margin-right: .3em;
   width: 10em;
+  /* border-radius: 5px; */
 }
 
 button:hover {
@@ -160,7 +161,7 @@ button:before, button:after {
   height: 2px;
   width: 0;
   background: #43acff;
-  transition: 400ms ease all;
+  transition: 300ms ease all;
 }
 
 button:after {
@@ -172,5 +173,5 @@ button:after {
 
 button:hover:before, button:hover:after {
   width: 100%;
-  transition: 800ms ease all;
+  transition: 600ms ease all;
 }
