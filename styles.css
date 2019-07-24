@@ -171,6 +171,7 @@ body {
 
 .button-smalltext {
   font-size: 1em;
+  width: 20%;
 }
 
 /* Nice button code by Vincent Durand */
@@ -187,13 +188,13 @@ button {
   outline: none;
   margin-left: .3em;
   margin-right: .3em;
-  width: 15%;
+  width: 10em;
   /* border-radius: 5px; */
 }
 
 button:hover {
   background: #fff;
-  width: 15%;
+  /* width: 15%; */
   color: #43acff;
 }
 
