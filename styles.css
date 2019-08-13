@@ -45,10 +45,18 @@ body {
   opacity: 0;
 }
 
+.above-hero {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  min-height: 13em;
+}
+
 .flex-center {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
 }
 
@@ -74,6 +82,7 @@ body {
   text-shadow: #000000 2px 2px;
   min-width: 100%;
   min-height: 14em;
+  margin-bottom: -1em;
   position: relative;
 }
 
@@ -229,19 +238,21 @@ button:hover:before, button:hover:after {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #36454f;
+  background-color: #343a40;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  /* opacity: ; */
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white ;
   display: block;
   transition: 0.3s;
+  opacity: .7;
 }
 
 .sidenav a:hover {
@@ -262,8 +273,8 @@ button:hover:before, button:hover:after {
   width:10%;
   /* align-self: auto; */
   color: #36454f;
-  position: absolute;
-  margin-bottom: 95%;
+  /* position:static; */
+  /* margin-bottom: 15%; */
 }
 
 #main {
