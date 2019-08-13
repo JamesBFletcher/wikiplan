@@ -257,6 +257,7 @@ button:hover:before, button:hover:after {
 
 .sidenav a:hover {
   color: #f1f1f1;
+  cursor: pointer;
 }
 
 .sidenav .closebtn {
@@ -269,13 +270,14 @@ button:hover:before, button:hover:after {
 
 .navbutton {
   font-size:30px;
-  cursor:pointer;
+  /* cursor:pointer; */
   width:10%;
   /* align-self: auto; */
   color: #36454f;
   /* position:static; */
   /* margin-bottom: 15%; */
 }
+
 
 #main {
   transition: margin-left .5s;
