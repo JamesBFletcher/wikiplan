@@ -270,7 +270,7 @@ button:hover:before, button:hover:after {
 
 .navbutton {
   font-size:30px;
-  /* cursor:pointer; */
+  cursor:pointer;
   width:10%;
   /* align-self: auto; */
   color: #36454f;
